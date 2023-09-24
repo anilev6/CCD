@@ -43,9 +43,8 @@ function Move-To-NextDir {
 $path = Move-To-NextDir
 if (Test-Path $path -PathType Container) {
     Set-Location -Path $path
-} else {
-    Write-Output $path
-}
+} 
 
+return $path
 
 
