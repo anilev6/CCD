@@ -16,7 +16,6 @@ function Move-To-NextDir {
         1 {
             $targetDir = ($dirs | Select-Object -First 1).FullName
             # Write-Host "Attempting to navigate to: $targetDir" # Debug output
-            Set-Location -Path $targetDir
             return $targetDir
         }
 
@@ -26,14 +25,12 @@ function Move-To-NextDir {
             $exactMatch = ($dirs | Where-Object { $_.Name -eq $current_dir_name } | Select-Object -First 1).FullName
 
             if ($exactMatch) {
-                Set-Location -Path $exactMatch
                 return $exactMatch
             } else {
                 # Try to find a similar directory
                 $similarMatch = ($dirs | Where-Object { $_.Name -like "*$current_dir_name*" } | Select-Object -First 1).FullName
 
                 if ($similarMatch) {
-                    Set-Location -Path $similarMatch
                     return $similarMatch
                 } else {
                     return "Couldn't find a matching directory. Not navigating automatically."
