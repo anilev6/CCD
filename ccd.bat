@@ -3,4 +3,6 @@ FOR /F "tokens=*" %%i IN ('powershell.exe -ExecutionPolicy Bypass -NoProfile -Fi
 
 if exist "%newdir%\" (
     cd "%newdir%"
-) 
+) else (
+    echo %newdir%
+)
