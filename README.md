@@ -1,8 +1,8 @@
-#Custom `cd` command
+# Custom `cd` command
 
 Navigate through folders in the terminal without specifying the folder's name using the new `ccd` command.
 
-##What is it
+## What is it
 
 Often, our projects have a complicated folder structure, resembling fractals like `Project\Project\project1\Project`. Additionally, occasionally, we must navigate up or down one or multiple folders in the terminal. Using `cd ...` requires specifying the path, which can be time-consuming, especially when needing to list with `ls .` and then copy-pasting a long target folder name (that may closely resemble the current folder's name) or manually typing the target folder name into `cd ...`.
 
@@ -21,7 +21,8 @@ Enter the `ccd` command, which:
 Therefore, no path input is required; simply use `ccd`.
 
 Feel free to customize this script to navigate folders based on different rules. But first, ensure you install it correctly.
-Global Installation
+
+## Global Installation
 
 I assume you have both CMD and PowerShell on your Windows.
 
@@ -29,7 +30,7 @@ For PowerShell:
 
   - Navigate to System Properties -> Advanced -> Environment Variables -> PATH.
   - Click on Edit... -> New.
-  - Add the path C:\where\you\downloaded\this\folder\CCD.
+  - Add the path `C:\where\you\downloaded\this\folder\CCD`.
   - Click on OK twice.
 
 For CMD:
