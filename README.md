@@ -37,7 +37,7 @@ For CMD:
 
   - Edit ccd.bat : replace `C:\CCD\ccd.ps1` with `C:\where\you\downloaded\this\folder\CCD\ccd.ps1`.
 
-I recommend completing both steps.
+I recommend completing both steps. Alternatively, just put the scripts into one of the already existing `PATH` folders.
 
 Once done, relaunch your terminals and test the ccd command.
 
